@@ -1,0 +1,189 @@
+
+/**
+styles 
+
+*/
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar { 
+  position: fixed;
+  z-index: 1;
+  top: 30px;
+  left: 0px;
+  /* background-color: #111; */
+  background-image:url("../img/menuhamb/fondoside3.png");
+  background-repeat:no-repeat;  
+  transition: 0.5s;
+  padding-top: 20px;
+  height: 620px;
+  width: 0px;
+  overflow-y: auto; 
+    
+}
+
+.sidebar a {
+  padding: 9px 9px 9px 7px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: black;
+  background-color: green;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 2px;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+.paddleft_10{
+   padding-left: 10px;
+}
+
+.paddleft_70{
+   padding-left: 70px;
+}
+
+
+.mgleft_10{
+   margin-left: 10px;
+}
+
+.bgbtnhamb{
+   background-color: blue;
+}
+
+.spancolor_blue{
+  color:blue; 
+}
+
+.spansize_20{
+   font-size: 20px;
+}
+
+.rounded_15{
+   border-radius: 15px;
+}
+
+.w_42{
+   width:42px;
+}
+.w_45{
+   width:45px;
+}
+.txtcolor_wh{
+   color: white;
+}
+
+.links{
+   text-decoration: none;
+}
+
+.btn-rounded{
+   border-radius: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav
+ (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+   * {
+      box-sizing: border-box;
+    }
+    .container {
+      margin-top: 30px;
+      text-align: center;
+    }
+   .tooltips {
+      margin-right:15px; position: relative;    
+    }
+   .tooltips-content {
+      color: white;
+      background: black;
+      padding: 5px;
+      border-radius: 5px;
+      visibility: hidden;  /*hides the tooltip content */
+      margin-left: 20px;
+    
+      /* positions the tooltip content */
+      position: absolute;
+      z-index: 1;
+      text-align: center;
+      width: 100px;      
+      top: -150%; /* to the top */
+    }
+    .tooltips:hover > .tooltips-content {
+      visibility: visible; /* shows the tooltip content on mouse over */
+    }
+
+    .mgbottom_15{
+       margin-botton: 15px;
+    }
+
+    .mgbottom_25{
+       margin-botton: 30px;
+    }
+    
+    @keyframes myAnimation {
+      from {
+        background-color: gold;
+        left: 10px;
+      }
+      to {
+        background-color: green;
+        left: 80px;
+      }
+    }
+    
+    /* 
+   .mysid {
+      animation-name: myAnimation;
+      animation-duration: 2s;
+      animation-iteration-count: 2s;
+      animation-direction: alternate;      
+      width: 170px;
+      height: 70px;
+      transition-delay: 1s;
+    }
+    */
+        
+    #mySidebar{
+      animation-name: myAnimation;
+      width: 100px;
+      height: 70px;
+      background-image:url("../img/menuhamb/fondoside3.png");
+      transition-property: width, height, background;
+      transition-duration: 1s;
+      animation-duration: 1s;
+    }
+    
+    #mySidebar:hover {
+      width: 200px;
+      height: 200px;
+    }
+    

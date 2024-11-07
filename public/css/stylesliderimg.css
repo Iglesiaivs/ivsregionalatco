@@ -1,0 +1,48 @@
+    .slider {
+      overflow: visible;
+      position: relative;
+    }
+       
+    /*
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60%;
+      height: 400px; /* Ajusta según tu necesidad    
+      transition: left 0.5s ease-in-out; /* Ajusta duración y la función de easing
+    }
+    */
+    
+    .slide{
+      position: absolute;
+      top: 20px;
+      left:0;         
+      width: 50%;
+      height: 450px; /* Ajusta según tu necesidad */
+      transition: left 0.5s ease-in-out; /* Ajusta duración y la función de easing */
+    }    
+    
+    /* Oculta todas las imágenes excepto la primera */
+    .slide:not(:first-child) {
+      left: 100%;
+    }
+   
+    [class*="col-"] {
+      float: left;
+      height: 450px;
+      /*
+      background: lightgrey;
+      border-right: 1px solid black;
+      */
+    }
+    .col-6 {width: 60%}
+    .col-2 {width: 20%; heigth: 30%;}
+
+
+
+
+
+
+
+  

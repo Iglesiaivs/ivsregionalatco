@@ -1,0 +1,126 @@
+/* 
+iglsitwebapp.css 
+*/
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-menu li {
+    margin-left: 2rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Slider */
+.slider {
+  width: 92%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 25px;  
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block; /* Se muestra por defecto */
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 1s ease-in-out; /* Efecto de transición */
+}
+
+.slide.active {
+  opacity: 2; /* Visible */
+}
+
+/* Contenido */
+.contenido {
+  padding: 2rem;
+}
+
+.btndirec{
+  padding-left: 90px;  
+}
+
+
+/* Footer 
+footer {
+    background-color: #33;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+Estilos para el menú hamburguesa 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+}
+
+ Estilos para dispositivos móviles 
+  @media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu.active {
+        display: flex;
+        flex-direction: column;
+        background-color: #f0f0f0;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+
+    .nav-menu.active li {
+        margin: 1rem 0;
+        text-align: center;
+    }
+}
+
+*/
